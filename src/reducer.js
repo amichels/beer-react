@@ -1,13 +1,11 @@
 const defaultState = {
-  images: []
+  beer: []
 }
 
-export default function images(state = defaultState, action) {
+export default function beer(state = defaultState, action) {
   switch(action.type) {
-    case 'IMAGES_LOADED':
-      return {...state, images: action.images};
-    case 'IMAGE_SELECTED':
-    	return {...state, selectedImage: action.image};
+    case 'BEER_LOADED':
+      return {...state, beer: action.beer};
     default:
       return state;
   }

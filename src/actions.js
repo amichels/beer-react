@@ -1,15 +1,7 @@
-export const IMAGE_SELECTED = 'IMAGE_SELECTED';
-const LOAD_IMAGES = 'LOAD_IMAGES';
+const LOAD_BEER = 'LOAD_BEER';
 
-export function selectImage(image) {
+export function loadBeer() {
   return {
-    type: IMAGE_SELECTED,
-    image
-  }
-}
-
-export function loadImages() {
-  return {
-    type: LOAD_IMAGES
+    type: LOAD_BEER
   }
 }
