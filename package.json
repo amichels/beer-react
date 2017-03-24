@@ -1,0 +1,40 @@
+{
+  "name": "beer-react",
+  "version": "1.0.0",
+  "description": "beer react app",
+  "main": "main.js",
+  "scripts": {
+    "test": "babel-node ./src/saga.spec.js | tap-spec",
+    "start": "budo ./src/main.js:build.js --dir ./src --verbose  --live -- -t babelify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amichels/beer-react.git"
+  },
+  "author": "Andy Michels",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amichels/beer-react/issues"
+  },
+  "homepage": "https://github.com/amichels/beer-react#readme",
+  "dependencies": {
+    "babel-polyfill": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "redux": "latest",
+    "redux-saga": "latest"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-core": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "babel-preset-stage-2": "latest",
+    "babelify": "latest",
+    "browserify": "latest",
+    "budo": "latest",
+    "tap-spec": "latest",
+    "tape": "latest"
+  }
+}
