@@ -1,11 +1,11 @@
 const defaultState = {
-  beer: []
+  beers: []
 }
 
 export default function beer(state = defaultState, action) {
   switch(action.type) {
     case 'BEER_LOADED':
-      return {...state, beer: action.beer};
+      return {...state, beers: action.beers};
     default:
       return state;
   }

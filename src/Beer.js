@@ -9,16 +9,22 @@ export class Beer extends Component {
     this.props.loadBeer();
   }
   render() {
-    const {images, selectedImage, selectImage} = this.props;
+    const beers = this.props.beers;
     return (
-        <div>test </div>
+      <ul>
+        {beers.map((beer, index) => (
+          <li key={index}>
+            {beer.name}
+          </li>
+        ))}
+      </ul>
     )
   }
 }
 
 function mapStateToProps(state) {
   return {
-    beer: state.beer
+    beers: state.beers
   }
 }
 

@@ -4,7 +4,7 @@ const API_ENDPOINT = `http://api.brewerydb.com/v2/search?q=Goosinator&type=beer&
 export const fetchBeer = () => {
   return fetch(API_ENDPOINT).then(function (response) {
     return response.json().then(function (json) {
-      return json;
+      return json.data;
     })
   })
 };

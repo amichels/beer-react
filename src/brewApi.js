@@ -2,9 +2,9 @@ import {fetchBeer} from './brew';
 import {put, take, fork} from 'redux-saga/effects';
 
 export function* loadBeer() {
-  const beer = yield fetchBeer();
+  const beers = yield fetchBeer();
   try {
-    yield put({type: 'BEER_LOADED', beer});
+    yield put({type: 'BEER_LOADED', beers});
   } catch(error) {
     yield put({type: 'BEER_LOAD_FAILURE', error})
   }
